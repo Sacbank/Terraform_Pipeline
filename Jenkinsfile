@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Sacbank/Terraform_Pipeline.git'
+                git branch: 'main', credentialsId: 'fcfec536-e1a5-4688-b92a-94e66b721c95', url: 'https://github.com/Sacbank/Terraform_Pipeline.git'
             }
         }
         stage('Terraform init') {
