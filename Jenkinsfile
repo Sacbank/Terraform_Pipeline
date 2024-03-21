@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Sacbank/terraform.git'
+                git branch: 'main', url: 'https://github.com/Sacbank/Terraform_Pipeline.git'
             }
         }
         stage('Terraform init') {
